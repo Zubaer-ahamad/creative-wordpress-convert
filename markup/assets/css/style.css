@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: "Work Sans", sans-serif;
+}
+
+body.darkTheme {
+    background-color: #181A2A !important;
+    color: #fff !important;
+}
+
+a {
+    color: black;
+}
+
+.darkTheme a {
+    color: white !important;
+}
+
+.darkTheme a:hover{
+    color: orange !important;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    max-width: 1240px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 575.98px) {
+    .container {
+        width: 100%;
+    }
+}

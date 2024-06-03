@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meta || Author</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/author.css">
+</head>
+
+<body>
+    <!-- header start hare -->
+    <header>
+        <nav class="container">
+            <div class="header-logo">
+                <a href="index.html">
+                    <img id="head-logo" src="assets/images/Logo.png" alt="">
+                </a>
+            </div>
+            <div class="icon-box">
+                <ul class="nav-icon" id="nav-icon">
+                    <li><a id="icon-one" href="index.html">Home</a></li>
+                    <li><a id="icon-two" href="author.html">Author</a></li>
+                    <li><a id="icon-three" href="single-post.html">Single Post</a></li>
+                    <li><a id="icon-four" href="#">Pages</a></li>
+                    <li><a id="icon-five" href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav-end">
+                <div class="search-bar">
+                    <input type="text" name="" placeholder="Search" id="" class="search-field">
+                    <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="dark-mode" onclick="toggleDark()">
+                    <button class="sunny-btn">
+                        <img class="sunny-img" id="sunny-img" src="assets/images/sunny.png" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="nav-btn" onclick="toggleMenu()">
+                <button class="menu-btn"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </nav>
+    </header>
+    <!-- header end hare -->
+
+    <!-- main start hare -->
+    <main>
+        <!-- author section start -->
+        <section class="container">
+            <div class="author">
+                <div class="author-title">
+                    <img class="author-img" src="assets/images/hero-content-img.png" alt="">
+                    <div>
+                        <h4>Jonathan Doe</h4>
+                        <p>Collaborator & Editor</p>
+                    </div>
+                </div>
+                <p class="author-subtitle">Meet Jonathan Doe, a passionate writer and blogger with a love for <br
+                        class="break"> technology and travel. Jonathan
+                    holds a degree in Computer Science and <br class="break"> has spent years working in the tech
+                    industry, gaining a deep
+                    understanding <br class="break"> of the impact technology has on our lives.
+                </p>
+                <div class="social-icon">
+                    <a href="#"><img src="assets/images/fb.png" alt=""></a>
+                    <a href="#"><img src="assets/images/x.png" alt=""></a>
+                    <a href="#"><img src="assets/images/insta.png" alt=""></a>
+                    <a href="#"><img src="assets/images/yt.png" alt=""></a>
+                </div>
+            </div>
+        </section>
+        <!-- author section end -->
+
+        <!-- post section start -->
+        <section class="container">
+
+            <div class="post-heading">
+                <h1 class="post-title">Latest Post</h1>
+                <div class="post-btn-group">
+                    <button class="post-heading-btn" onclick="handleCardThree()"><i
+                            class="fa-solid fa-table-cells"></i></button>
+                    <button class="post-heading-btn" onclick="handleCardTwo()"><i
+                            class="fa-solid fa-table-cells-large"></i></button>
+                    <button class="post-heading-btn" onclick="handleCardOne()"><i class="fa-solid fa-list"></i></button>
+                </div>
+            </div>
+
+            <div class="card-container" id="card-container">
+                <!-- card-1 -->
+                <div class="post-card">
+                    <div class="post-img">
+                        <img src="assets/images//post-1.png" alt="">
+                    </div>
+                    <div>
+                        <button class="post-btn">Technology</button>
+                        <h1 class="card-title">The Impact of Technology on the Workplace: How Technology is Changing
+                        </h1>
+                        <div class="card-subtitle">
+                            <img src="assets/images/wilson.png" alt="">
+                            <p>Tracey Wilson</p>
+                            <p>August 20, 2022</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card-2 -->
+                <div class="post-card">
+                    <div class="post-img">
+                        <img src="assets/images/post-2.png" alt="">
+                    </div>
+                    <div>
+                        <button class="post-btn">Technology</button>
+                        <h1 class="card-title">The Impact of Technology on the Workplace: How Technology is Changing
+                        </h1>
+                        <div class="card-subtitle">
+                            <img src="assets/images/hero-content-img.png" alt="">
+                            <p>Jason Francisco</p>
+                            <p>August 20, 2022</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card-3 -->
+                <div class="post-card">
+                    <div class="post-img">
+                        <img src="assets/images/post-3.png" alt="">
+                    </div>
+                    <div>
+                        <button class="post-btn">Technology</button>
+                        <h1 class="card-title">The Impact of Technology on the Workplace: How Technology is Changing
+                        </h1>
+                        <div class="card-subtitle">
+                            <img src="assets/images/stavin.png" alt="">
+                            <p>Elizabeth Slavin</p>
+                            <p>August 20, 2022</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card-4 -->
+                <div class="post-card">
+                    <div class="post-img">
+                        <img src="assets/images/post-4.png" alt="">
+                    </div>
+                    <div>
+                        <button class="post-btn">Technology</button>
+                        <h1 class="card-title">The Impact of Technology on the Workplace: How Technology is Changing
+                        </h1>
+                        <div class="card-subtitle">
+                            <img src="assets/images/enric.png" alt="">
+                            <p>Ernie Smith</p>
+                            <p>August 20, 2022</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card-5 -->
+                <div class="post-card">
+                    <div class="post-img">
+                        <img src="assets/images/post-5.png" alt="">
+                    </div>
+                    <div>
+                        <button class="post-btn">Technology</button>
+                        <h1 class="card-title">The Impact of Technology on the Workplace: How Technology is Changing
+                        </h1>
+                        <div class="card-subtitle">
+                            <img src="assets/images/eric-smith.png" alt="">
+                            <p>Eric Smith</p>
+                            <p>August 20, 2022</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card-6 -->
+                <div class="post-card">
+                    <div class="post-img">
+                        <img src="assets/images/post-6.png" alt="">
+                    </div>
+                    <div>
+                        <button class="post-btn">Technology</button>
+                        <h1 class="card-title">The Impact of Technology on the Workplace: How Technology is Changing
+                        </h1>
+                        <div class="card-subtitle">
+                            <img src="assets/images/wilson.png" alt="">
+                            <p>Tracey Wilson</p>
+                            <p>August 20, 2022</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card-7 -->
+                <div class="post-card">
+                    <div class="post-img">
+                        <img src="assets/images/post-7.png" alt="">
+                    </div>
+                    <div>
+                        <button class="post-btn">Technology</button>
+                        <h1 class="card-title">The Impact of Technology on the Workplace: How Technology is Changing
+                        </h1>
+                        <div class="card-subtitle">
+                            <img src="assets/images/hero-content-img.png" alt="">
+                            <p>Jason Francisco</p>
+                            <p>August 20, 2022</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card-8 -->
+                <div class="post-card">
+                    <div class="post-img">
+                        <img src="assets/images/post-8.png" alt="">
+                    </div>
+                    <div>
+                        <button class="post-btn">Technology</button>
+                        <h1 class="card-title">The Impact of Technology on the Workplace: How Technology is Changing
+                        </h1>
+                        <div class="card-subtitle">
+                            <img src="assets/images/stavin.png" alt="">
+                            <p>Elizabeth Slavin</p>
+                            <p>August 20, 2022</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card-9 -->
+                <div class="post-card">
+                    <div class="post-img">
+                        <img src="assets/images/post-9.png" alt="">
+                    </div>
+                    <div>
+                        <button class="post-btn">Technology</button>
+                        <h1 class="card-title">The Impact of Technology on the Workplace: How Technology is Changing
+                        </h1>
+                        <div class="card-subtitle">
+                            <img src="assets/images/enric.png" alt="">
+                            <p>Ernie Smith</p>
+                            <p>August 20, 2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn-div">
+                <button class="view-btn">View All Post</button>
+            </div>
+
+        </section>
+        <!-- post section end -->
+
+        <!-- ad section start -->
+        <section class="ad-container">
+            <div class="ad-section">
+                <img id="ad-img" src="assets/images/ads-space.png" alt="">
+            </div>
+        </section>
+        <!-- ad section end -->
+    </main>
+    <!-- main end hare -->
+
+    <!-- footer start hare -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div>
+                    <h3 class="footer-title">About</h3>
+                    <p class="footer-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore
+                        et
+                        dolore magna aliqua. Ut enim ad minim veniam</p>
+                    <p class="footer-email"><span class="title-name">Email</span>: info@jstemplate.net</p>
+                    <p><span class="title-name">Phone</span>: 880 123 456 789</p>
+                </div>
+
+                <div>
+                    <h3 class="footer-title">Quick Link</h3>
+                    <div class="footer-icon">
+                        <a href="#">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Archived</a>
+                        <a href="#">Author</a>
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="footer-title">Category</h3>
+                    <div class="footer-icon">
+                        <a href="#">Lifestyle</a>
+                        <a href="#">Technology</a>
+                        <a href="#">Travel</a>
+                        <a href="#">Business</a>
+                        <a href="#">Economy</a>
+                        <a href="#">Sports</a>
+                    </div>
+                </div>
+
+                <div class="footer-box">
+                    <h2 class="box-title">Weekly Newsletter</h2>
+                    <p class="footer-subtitle">Get blog articles and offers via email</p>
+                    <div class="input-box">
+                        <input class="email-field" type="email" name="email" placeholder="Your Email">
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+                    <button class="subscribe-btn">Subscribe</button>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="end-section">
+                    <img class="footer-logo" src="assets/images/footer-logo.png" alt="">
+                    <div>
+                        <h4 class="meta-title">Meta <span class="meta-sub-title">Blog</span></h4>
+                        <p>© JS Template 2023. All Rights Reserved.</p>
+                    </div>
+                </div>
+                <div class="bottom-icon">
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end hare -->
+
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
